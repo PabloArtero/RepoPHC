@@ -9,14 +9,14 @@ package vistas;
  *
  * @author mailt
  */
-public class VistaNivel extends javax.swing.JFrame {
+public class VentanaTarea extends javax.swing.JFrame {
 
     /**
-     * Creates new form VistaNivel
+     * Creates new form VistaTarea
      */
-    public VistaNivel() {
+    public VentanaTarea() {
         initComponents();
-        this.setLocationRelativeTo(null);
+         this.setLocationRelativeTo(null);
     }
 
     /**
@@ -29,7 +29,7 @@ public class VistaNivel extends javax.swing.JFrame {
     private void initComponents() {
 
         jScrollPane1 = new javax.swing.JScrollPane();
-        jTablaNivel = new javax.swing.JTable();
+        jTablaTarea = new javax.swing.JTable();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
         jMenu2 = new javax.swing.JMenu();
@@ -39,7 +39,7 @@ public class VistaNivel extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jTablaNivel.setModel(new javax.swing.table.DefaultTableModel(
+        jTablaTarea.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null},
                 {null, null},
@@ -58,10 +58,10 @@ public class VistaNivel extends javax.swing.JFrame {
                 return canEdit [columnIndex];
             }
         });
-        jScrollPane1.setViewportView(jTablaNivel);
-        if (jTablaNivel.getColumnModel().getColumnCount() > 0) {
-            jTablaNivel.getColumnModel().getColumn(0).setResizable(false);
-            jTablaNivel.getColumnModel().getColumn(1).setResizable(false);
+        jScrollPane1.setViewportView(jTablaTarea);
+        if (jTablaTarea.getColumnModel().getColumnCount() > 0) {
+            jTablaTarea.getColumnModel().getColumn(0).setResizable(false);
+            jTablaTarea.getColumnModel().getColumn(1).setResizable(false);
         }
 
         jMenu1.setText("Seleccionar |");
@@ -94,8 +94,8 @@ public class VistaNivel extends javax.swing.JFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 267, Short.MAX_VALUE)
-                .addContainerGap())
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 275, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         pack();
@@ -118,20 +118,21 @@ public class VistaNivel extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(VistaNivel.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(VentanaTarea.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(VistaNivel.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(VentanaTarea.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(VistaNivel.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(VentanaTarea.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(VistaNivel.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(VentanaTarea.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new VistaNivel().setVisible(true);
+                new VentanaTarea().setVisible(true);
             }
         });
     }
@@ -144,6 +145,6 @@ public class VistaNivel extends javax.swing.JFrame {
     private javax.swing.JMenu jMenu5;
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JTable jTablaNivel;
+    private javax.swing.JTable jTablaTarea;
     // End of variables declaration//GEN-END:variables
 }

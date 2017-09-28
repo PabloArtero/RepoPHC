@@ -9,12 +9,12 @@ package vistas;
  *
  * @author mailt
  */
-public class VistaRequerimiento extends javax.swing.JFrame {
+public class VentanaNivel extends javax.swing.JFrame {
 
     /**
-     * Creates new form VistaRequerimiento
+     * Creates new form VistaNivel
      */
-    public VistaRequerimiento() {
+    public VentanaNivel() {
         initComponents();
         this.setLocationRelativeTo(null);
     }
@@ -29,7 +29,7 @@ public class VistaRequerimiento extends javax.swing.JFrame {
     private void initComponents() {
 
         jScrollPane1 = new javax.swing.JScrollPane();
-        jTablaRequerimiento = new javax.swing.JTable();
+        jTablaNivel = new javax.swing.JTable();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
         jMenu2 = new javax.swing.JMenu();
@@ -39,7 +39,7 @@ public class VistaRequerimiento extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jTablaRequerimiento.setModel(new javax.swing.table.DefaultTableModel(
+        jTablaNivel.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null},
                 {null, null},
@@ -47,7 +47,7 @@ public class VistaRequerimiento extends javax.swing.JFrame {
                 {null, null}
             },
             new String [] {
-                "ID de Requerimiento", "Descripción"
+                "ID de Tarea", "Descripción"
             }
         ) {
             boolean[] canEdit = new boolean [] {
@@ -58,10 +58,10 @@ public class VistaRequerimiento extends javax.swing.JFrame {
                 return canEdit [columnIndex];
             }
         });
-        jScrollPane1.setViewportView(jTablaRequerimiento);
-        if (jTablaRequerimiento.getColumnModel().getColumnCount() > 0) {
-            jTablaRequerimiento.getColumnModel().getColumn(0).setResizable(false);
-            jTablaRequerimiento.getColumnModel().getColumn(1).setResizable(false);
+        jScrollPane1.setViewportView(jTablaNivel);
+        if (jTablaNivel.getColumnModel().getColumnCount() > 0) {
+            jTablaNivel.getColumnModel().getColumn(0).setResizable(false);
+            jTablaNivel.getColumnModel().getColumn(1).setResizable(false);
         }
 
         jMenu1.setText("Seleccionar |");
@@ -94,8 +94,8 @@ public class VistaRequerimiento extends javax.swing.JFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 275, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 267, Short.MAX_VALUE)
+                .addContainerGap())
         );
 
         pack();
@@ -118,20 +118,21 @@ public class VistaRequerimiento extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(VistaRequerimiento.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(VentanaNivel.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(VistaRequerimiento.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(VentanaNivel.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(VistaRequerimiento.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(VentanaNivel.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(VistaRequerimiento.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(VentanaNivel.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new VistaRequerimiento().setVisible(true);
+                new VentanaNivel().setVisible(true);
             }
         });
     }
@@ -144,6 +145,6 @@ public class VistaRequerimiento extends javax.swing.JFrame {
     private javax.swing.JMenu jMenu5;
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JTable jTablaRequerimiento;
+    private javax.swing.JTable jTablaNivel;
     // End of variables declaration//GEN-END:variables
 }
