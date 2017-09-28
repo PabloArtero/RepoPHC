@@ -5,6 +5,7 @@
  */
 package dominio;
 
+import java.util.ArrayList;
 import java.util.Date;
 
 /**
@@ -25,8 +26,9 @@ public class Empleado {
     private String email;
     private String domicilio;
     private char sexo;
+    private ArrayList<Puesto> puestos;
 
-    public Empleado(int idEmpleado, String apellido, String nombre, int legajo, Date fechaIngreso, int dni, String cuil, Date fechaNacimiento, boolean esActivo, int telefono, String email, String domicilio, char sexo) {
+    public Empleado(int idEmpleado, String apellido, String nombre, int legajo, Date fechaIngreso, int dni, String cuil, Date fechaNacimiento, boolean esActivo, int telefono, String email, String domicilio, char sexo, ArrayList<Puesto> puestos) {
         this.idEmpleado = idEmpleado;
         this.apellido = apellido;
         this.nombre = nombre;
@@ -40,8 +42,10 @@ public class Empleado {
         this.email = email;
         this.domicilio = domicilio;
         this.sexo = sexo;
+        this.puestos = puestos;
     }
-
+    
+    
     public int getIdEmpleado() {
         return idEmpleado;
     }
@@ -144,6 +148,14 @@ public class Empleado {
 
     public void setSexo(char sexo) {
         this.sexo = sexo;
+    }
+
+    public ArrayList<Puesto> getPuestos() {
+        return puestos;
+    }
+
+    public void setPuestos(ArrayList<Puesto> puestos) {
+        this.puestos = puestos;
     }
     
     
