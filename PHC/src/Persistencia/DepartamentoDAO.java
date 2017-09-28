@@ -3,27 +3,23 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package controladores;
+package Persistencia;
 
-import Persistencia.DepartamentoDAO;
+import dominio.Departamento;
 
 /**
  *
  * @author LENOVO
  */
-public class ControladorVistaAltaDepartamento {
-    private Persistencia.DepartamentoDAO departamento;
+public class DepartamentoDAO {
+    private dominio.Departamento departamento;    
+    
 
-    public DepartamentoDAO getDepartamento() {
+    public Departamento getDepartamento() {
         return departamento;
     }
 
-    public void setDepartamento(DepartamentoDAO departamento) {
+    public void setDepartamento(Departamento departamento) {
         this.departamento = departamento;
     }
-    
-    
-    
-    
-    
 }
