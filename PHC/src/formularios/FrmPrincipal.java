@@ -1,3 +1,8 @@
+/**
+ * Este formulario si convendría migrarlo a MVC. O sea, convertirlo en una 
+ * vista. Pero los formularios del login y la gestión de usuarios quizás 
+ * podrían quedar como están por ahora.
+ */
 package formularios;
 
 import phc.VariablesDelSistema;
