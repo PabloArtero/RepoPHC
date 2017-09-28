@@ -11,11 +11,11 @@ package dominio;
  */
 public class Requerimiento {
     private int idRequerimiento;
-    private String nombre;
+    private String descripcion;
 
-    public Requerimiento(int idRequerimiento, String nombre) {
+    public Requerimiento(int idRequerimiento, String descripcion) {
         this.idRequerimiento = idRequerimiento;
-        this.nombre = nombre;
+        this.descripcion = descripcion;
     }
 
     public int getIdRequerimiento() {
@@ -26,12 +26,12 @@ public class Requerimiento {
         this.idRequerimiento = idRequerimiento;
     }
 
-    public String getNombre() {
-        return nombre;
+    public String getDescripcion() {
+        return descripcion;
     }
 
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
+    public void setDescripcion(String descripcion) {
+        this.descripcion = descripcion;
     }
     
     
