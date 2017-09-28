@@ -19,8 +19,9 @@ public class Puesto {
     private Nivel nivel;
     private ArrayList<Requerimiento> requerimientos;
     private ArrayList<Tarea> tareas;
+    private ArrayList<Empleado> empleados;
 
-    public Puesto(int idPuesto, String nombre, String descripcion, Departamento departamento, Nivel nivel, ArrayList<Requerimiento> requerimientos, ArrayList<Tarea> tareas) {
+    public Puesto(int idPuesto, String nombre, String descripcion, Departamento departamento, Nivel nivel, ArrayList<Requerimiento> requerimientos, ArrayList<Tarea> tareas, ArrayList<Empleado> empleados) {
         this.idPuesto = idPuesto;
         this.nombre = nombre;
         this.descripcion = descripcion;
@@ -28,7 +29,10 @@ public class Puesto {
         this.nivel = nivel;
         this.requerimientos = requerimientos;
         this.tareas = tareas;
+        this.empleados = empleados;
     }
+
+   
 
     public int getIdPuesto() {
         return idPuesto;
@@ -85,6 +89,15 @@ public class Puesto {
     public void setTareas(ArrayList<Tarea> tareas) {
         this.tareas = tareas;
     }
+
+    public ArrayList<Empleado> getEmpleados() {
+        return empleados;
+    }
+
+    public void setEmpleados(ArrayList<Empleado> empleados) {
+        this.empleados = empleados;
+    }
+    
     
     
 }
