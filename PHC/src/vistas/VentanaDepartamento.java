@@ -9,12 +9,12 @@ package vistas;
  *
  * @author mailt
  */
-public class VistaRequerimiento extends javax.swing.JFrame {
+public class VentanaDepartamento extends javax.swing.JFrame {
 
     /**
-     * Creates new form VistaRequerimiento
+     * Creates new form VistaDepartamento
      */
-    public VistaRequerimiento() {
+    public VentanaDepartamento() {
         initComponents();
         this.setLocationRelativeTo(null);
     }
@@ -28,26 +28,30 @@ public class VistaRequerimiento extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jScrollPane1 = new javax.swing.JScrollPane();
-        jTablaRequerimiento = new javax.swing.JTable();
-        jMenuBar1 = new javax.swing.JMenuBar();
-        jMenu1 = new javax.swing.JMenu();
-        jMenu2 = new javax.swing.JMenu();
-        jMenu3 = new javax.swing.JMenu();
         jMenu4 = new javax.swing.JMenu();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        jTablaDepartamento = new javax.swing.JTable();
+        jMenuBar1 = new javax.swing.JMenuBar();
+        jMenu6 = new javax.swing.JMenu();
+        jMenu1 = new javax.swing.JMenu();
+        jMenu3 = new javax.swing.JMenu();
         jMenu5 = new javax.swing.JMenu();
+        jMenu2 = new javax.swing.JMenu();
+
+        jMenu4.setText("jMenu4");
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jTablaRequerimiento.setModel(new javax.swing.table.DefaultTableModel(
+        jTablaDepartamento.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
+                {null, null},
                 {null, null},
                 {null, null},
                 {null, null},
                 {null, null}
             },
             new String [] {
-                "ID de Requerimiento", "Descripción"
+                "ID Departamento", "Nombre"
             }
         ) {
             boolean[] canEdit = new boolean [] {
@@ -58,26 +62,26 @@ public class VistaRequerimiento extends javax.swing.JFrame {
                 return canEdit [columnIndex];
             }
         });
-        jScrollPane1.setViewportView(jTablaRequerimiento);
-        if (jTablaRequerimiento.getColumnModel().getColumnCount() > 0) {
-            jTablaRequerimiento.getColumnModel().getColumn(0).setResizable(false);
-            jTablaRequerimiento.getColumnModel().getColumn(1).setResizable(false);
+        jScrollPane1.setViewportView(jTablaDepartamento);
+        if (jTablaDepartamento.getColumnModel().getColumnCount() > 0) {
+            jTablaDepartamento.getColumnModel().getColumn(0).setResizable(false);
+            jTablaDepartamento.getColumnModel().getColumn(1).setResizable(false);
         }
 
-        jMenu1.setText("Seleccionar |");
-        jMenuBar1.add(jMenu1);
+        jMenu6.setText("Seleccionar |");
+        jMenuBar1.add(jMenu6);
 
-        jMenu2.setText("Agregar |");
-        jMenuBar1.add(jMenu2);
+        jMenu1.setText("Agregar |");
+        jMenuBar1.add(jMenu1);
 
         jMenu3.setText("Modificar |");
         jMenuBar1.add(jMenu3);
 
-        jMenu4.setText("Eliminar |");
-        jMenuBar1.add(jMenu4);
-
-        jMenu5.setText("Volver |");
+        jMenu5.setText("Eliminar |");
         jMenuBar1.add(jMenu5);
+
+        jMenu2.setText("Volver |");
+        jMenuBar1.add(jMenu2);
 
         setJMenuBar(jMenuBar1);
 
@@ -94,8 +98,8 @@ public class VistaRequerimiento extends javax.swing.JFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 275, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 275, Short.MAX_VALUE)
+                .addContainerGap())
         );
 
         pack();
@@ -118,20 +122,21 @@ public class VistaRequerimiento extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(VistaRequerimiento.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(VentanaDepartamento.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(VistaRequerimiento.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(VentanaDepartamento.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(VistaRequerimiento.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(VentanaDepartamento.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(VistaRequerimiento.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(VentanaDepartamento.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new VistaRequerimiento().setVisible(true);
+                new VentanaDepartamento().setVisible(true);
             }
         });
     }
@@ -142,8 +147,9 @@ public class VistaRequerimiento extends javax.swing.JFrame {
     private javax.swing.JMenu jMenu3;
     private javax.swing.JMenu jMenu4;
     private javax.swing.JMenu jMenu5;
+    private javax.swing.JMenu jMenu6;
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JTable jTablaRequerimiento;
+    private javax.swing.JTable jTablaDepartamento;
     // End of variables declaration//GEN-END:variables
 }
