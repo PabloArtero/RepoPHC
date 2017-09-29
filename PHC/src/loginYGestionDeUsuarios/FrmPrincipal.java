@@ -3,9 +3,7 @@
  * vista. Pero los formularios del login y la gestión de usuarios quizás 
  * podrían quedar como están por ahora.
  */
-package formularios;
-
-import phc.VariablesDelSistema;
+package loginYGestionDeUsuarios;
 
 /**
  * Vantana principal que da acceso a todas las funciones del sistema.
@@ -127,7 +125,7 @@ public class FrmPrincipal extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void mnItemAdministrarMiCuentaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mnItemAdministrarMiCuentaActionPerformed
-        formularios.seguridad.FrmAdministrarMiCuenta ac = new formularios.seguridad.FrmAdministrarMiCuenta(this);
+        loginYGestionDeUsuarios.FrmAdministrarMiCuenta ac = new loginYGestionDeUsuarios.FrmAdministrarMiCuenta(this);
     }//GEN-LAST:event_mnItemAdministrarMiCuentaActionPerformed
 
     private void btnSalirDelSistemaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSalirDelSistemaActionPerformed
@@ -135,11 +133,11 @@ public class FrmPrincipal extends javax.swing.JFrame {
     }//GEN-LAST:event_btnSalirDelSistemaActionPerformed
 
     private void mnItemAdministrarUsuariosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mnItemAdministrarUsuariosActionPerformed
-        formularios.seguridad.FrmAdministrarUsuarios au = new formularios.seguridad.FrmAdministrarUsuarios(this);
+        loginYGestionDeUsuarios.FrmAdministrarUsuarios au = new loginYGestionDeUsuarios.FrmAdministrarUsuarios(this);
     }//GEN-LAST:event_mnItemAdministrarUsuariosActionPerformed
 
     private void mnItemCrearNuevoUsuarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mnItemCrearNuevoUsuarioActionPerformed
-        formularios.seguridad.FrmCrearNuevoUsuario cu = new formularios.seguridad.FrmCrearNuevoUsuario(this);
+        loginYGestionDeUsuarios.FrmCrearNuevoUsuario cu = new loginYGestionDeUsuarios.FrmCrearNuevoUsuario(this);
     }//GEN-LAST:event_mnItemCrearNuevoUsuarioActionPerformed
 
     public static void main(String args[]) {

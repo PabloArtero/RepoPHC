@@ -1,7 +1,6 @@
-package formularios.seguridad;
+package loginYGestionDeUsuarios;
 
-import phc.VariablesDelSistema;
-import phc.ParametrosDeConexionBD;
+import persistencia.ParametrosDeConexionBD;
 import java.sql.*;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -126,7 +125,7 @@ public class FrmIniciarSesion extends javax.swing.JFrame {
                     VariablesDelSistema.usuarioEsAdministrador = true;
                     System.out.println("El usuario es Administrador");
                 }
-                formularios.FrmPrincipal frmPrincipal = new formularios.FrmPrincipal();//abro la ventana principal.
+                loginYGestionDeUsuarios.FrmPrincipal frmPrincipal = new loginYGestionDeUsuarios.FrmPrincipal();//abro la ventana principal.
                 if(rs.getBoolean("contraseñaRestaurada")){//si su contraseña fué restaurada...
                     VariablesDelSistema.contraseñaRestaurada = true;
                     FrmAdministrarMiCuenta ac = new FrmAdministrarMiCuenta(frmPrincipal);//abro también la ventana para administrar mi cuenta.

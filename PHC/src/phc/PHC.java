@@ -4,6 +4,7 @@
 /*modificación en la clase principal*/
 package phc;
 
+import loginYGestionDeUsuarios.VariablesDelSistema;
 import javax.swing.JFrame;
 
 /**
@@ -21,7 +22,7 @@ public class PHC {
      * @param args los argumentos de la linea de comandos.
      */
     public static void main(String[] args) {
-        formularios.seguridad.FrmIniciarSesion frmIniciarSesion = new formularios.seguridad.FrmIniciarSesion();
+        loginYGestionDeUsuarios.FrmIniciarSesion frmIniciarSesion = new loginYGestionDeUsuarios.FrmIniciarSesion();
         
         //pruebaFrmPrincipal();
         //pruebaAdministrarUsuarios();
@@ -33,20 +34,20 @@ public class PHC {
     private static void pruebaFrmPrincipal(){
         VariablesDelSistema.idUsuarioActual = 1;
         VariablesDelSistema.usuarioEsAdministrador = true;
-        formularios.FrmPrincipal frmPrincipal = new formularios.FrmPrincipal();
+        loginYGestionDeUsuarios.FrmPrincipal frmPrincipal = new loginYGestionDeUsuarios.FrmPrincipal();
     }
     private static void pruebaAdministrarUsuarios(){
         VariablesDelSistema.idUsuarioActual = 1;
         VariablesDelSistema.usuarioEsAdministrador = true;
-        formularios.FrmPrincipal frmPrincipal = new formularios.FrmPrincipal();
-        formularios.seguridad.FrmAdministrarUsuarios au = new formularios.seguridad.FrmAdministrarUsuarios(frmPrincipal);
+        loginYGestionDeUsuarios.FrmPrincipal frmPrincipal = new loginYGestionDeUsuarios.FrmPrincipal();
+        loginYGestionDeUsuarios.FrmAdministrarUsuarios au = new loginYGestionDeUsuarios.FrmAdministrarUsuarios(frmPrincipal);
         au.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     }
     private static void pruebaCrearNuevoUsuario(){
         VariablesDelSistema.idUsuarioActual = 1;
         VariablesDelSistema.usuarioEsAdministrador = true;
-        formularios.FrmPrincipal frmPrincipal = new formularios.FrmPrincipal();
-        formularios.seguridad.FrmCrearNuevoUsuario cu = new formularios.seguridad.FrmCrearNuevoUsuario(frmPrincipal);
+        loginYGestionDeUsuarios.FrmPrincipal frmPrincipal = new loginYGestionDeUsuarios.FrmPrincipal();
+        loginYGestionDeUsuarios.FrmCrearNuevoUsuario cu = new loginYGestionDeUsuarios.FrmCrearNuevoUsuario(frmPrincipal);
         cu.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     }
 }

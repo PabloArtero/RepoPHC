@@ -1,7 +1,7 @@
-package formularios.seguridad;
+package loginYGestionDeUsuarios;
 
-import phc.ParametrosDeConexionBD;
-import formularios.ItemDeCombo;
+import persistencia.ParametrosDeConexionBD;
+import loginYGestionDeUsuarios.ItemDeCombo;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;

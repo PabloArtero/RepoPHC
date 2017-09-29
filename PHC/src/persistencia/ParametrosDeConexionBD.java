@@ -1,4 +1,4 @@
-package phc;
+package persistencia;
 
 /**
  * Parámetros de conexión a la base de datos.

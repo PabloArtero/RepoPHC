@@ -1,4 +1,4 @@
-package phc;
+package loginYGestionDeUsuarios;
 
 /**
  * Alberga las variables globales del sistema.

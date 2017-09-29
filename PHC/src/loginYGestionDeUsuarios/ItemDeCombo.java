@@ -1,5 +1,5 @@
 
-package formularios;
+package loginYGestionDeUsuarios;
 
 /**
  * Este clase permite guardar en un combo una clave (id) asociada al String mostrado por

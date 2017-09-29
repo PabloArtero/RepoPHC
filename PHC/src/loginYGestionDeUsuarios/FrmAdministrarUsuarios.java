@@ -1,8 +1,6 @@
-package formularios.seguridad;
+package loginYGestionDeUsuarios;
 
-import formularios.*;
-import phc.ParametrosDeConexionBD;
-import phc.VariablesDelSistema;
+import persistencia.ParametrosDeConexionBD;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;

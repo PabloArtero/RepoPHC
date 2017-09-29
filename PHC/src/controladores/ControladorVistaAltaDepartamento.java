@@ -5,14 +5,14 @@
  */
 package controladores;
 
-import Persistencia.DepartamentoDAO;
+import persistencia.DepartamentoDAO;
 
 /**
  *
  * @author LENOVO
  */
 public class ControladorVistaAltaDepartamento {
-    private Persistencia.DepartamentoDAO departamento;
+    private persistencia.DepartamentoDAO departamento;
 
     public DepartamentoDAO getDepartamento() {
         return departamento;
