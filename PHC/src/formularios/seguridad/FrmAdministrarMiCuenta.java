@@ -1,6 +1,6 @@
 package formularios.seguridad;
 
-import phc.ParámetrosDeConexiónBD;
+import phc.ParametrosDeConexionBD;
 import phc.VariablesDelSistema;
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -49,9 +49,9 @@ public class FrmAdministrarMiCuenta extends javax.swing.JFrame {
         PreparedStatement ps = null;
         ResultSet rs = null;
         try {
-            Class.forName(ParámetrosDeConexiónBD.DRIVER_JDBC); //Iniciamos el driver encargado de conectar con el servidor.
-            con = DriverManager.getConnection(ParámetrosDeConexiónBD.URL,
-                    ParámetrosDeConexiónBD.USUARIO, ParámetrosDeConexiónBD.CONTRASEÑA);
+            Class.forName(ParametrosDeConexionBD.DRIVER_JDBC); //Iniciamos el driver encargado de conectar con el servidor.
+            con = DriverManager.getConnection(ParametrosDeConexionBD.URL,
+                    ParametrosDeConexionBD.USUARIO, ParametrosDeConexionBD.CONTRASEÑA);
             //Devuelve una conexión abierta a la base de datos. Es como loguearse a MySQL y luego ejecutar USE nombreBD;
             //Se pueden establecer tantas conexiones como se quiera pero lo habitual es crear una sola, hacer algo con la
             //BD y luego cerrarla para liberar recursos.
@@ -74,7 +74,7 @@ public class FrmAdministrarMiCuenta extends javax.swing.JFrame {
             Logger.getLogger(FrmIniciarSesion.class.getName()).log(Level.SEVERE, null, ex);
         } catch (ClassNotFoundException ex) {//Si Class.forName() no encontró el driver
             Logger.getLogger(FrmIniciarSesion.class.getName()).log(Level.SEVERE, null, ex);
-            System.out.println("No se encontró el driver "+ ParámetrosDeConexiónBD.DRIVER_JDBC);
+            System.out.println("No se encontró el driver "+ ParametrosDeConexionBD.DRIVER_JDBC);
         } finally{//libero recursos
             try{
                 if(rs != null){rs.close(); System.out.println("ResultSets cerrados");}//liberamos los ResultSet
@@ -200,9 +200,9 @@ public class FrmAdministrarMiCuenta extends javax.swing.JFrame {
         ResultSet rs = null;
         ResultSet rs3 = null;
         try {
-            Class.forName(ParámetrosDeConexiónBD.DRIVER_JDBC); //Iniciamos el driver encargado de conectar con el sevidor.
-            con = DriverManager.getConnection(ParámetrosDeConexiónBD.URL,
-                    ParámetrosDeConexiónBD.USUARIO, ParámetrosDeConexiónBD.CONTRASEÑA);
+            Class.forName(ParametrosDeConexionBD.DRIVER_JDBC); //Iniciamos el driver encargado de conectar con el sevidor.
+            con = DriverManager.getConnection(ParametrosDeConexionBD.URL,
+                    ParametrosDeConexionBD.USUARIO, ParametrosDeConexionBD.CONTRASEÑA);
             //Devuelve una conexión abierta a la base de datos. Es como loguearse a MySQL y luego ejecutar USE nombreBD;
             //Se pueden establecer tantas conexiones como se quiera pero lo habitual es crear una sola, hacer algo con la
             //BD y luego cerrarla para liberar recursos.
@@ -295,7 +295,7 @@ public class FrmAdministrarMiCuenta extends javax.swing.JFrame {
             Logger.getLogger(FrmIniciarSesion.class.getName()).log(Level.SEVERE, null, ex);
         } catch (ClassNotFoundException ex) {//Si Class.forName() no encontró el driver
             Logger.getLogger(FrmIniciarSesion.class.getName()).log(Level.SEVERE, null, ex);
-            System.out.println("No se encontró el driver "+ ParámetrosDeConexiónBD.DRIVER_JDBC);
+            System.out.println("No se encontró el driver "+ ParametrosDeConexionBD.DRIVER_JDBC);
         } finally{//libero recursos
             try{
                 if(rs != null){rs.close(); System.out.println("ResultSet cerrado");}//liberamos los ResultSet
