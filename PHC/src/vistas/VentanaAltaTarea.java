@@ -9,12 +9,12 @@ package vistas;
  *
  * @author mailt
  */
-public class VentanaAltaNivel extends javax.swing.JFrame {
+public class VentanaAltaTarea extends javax.swing.JFrame {
 
     /**
-     * Creates new form VentanaAltaNivel
+     * Creates new form VentanaAltaTarea
      */
-    public VentanaAltaNivel() {
+    public VentanaAltaTarea() {
         initComponents();
         this.setLocationRelativeTo(null);
     }
@@ -30,25 +30,20 @@ public class VentanaAltaNivel extends javax.swing.JFrame {
 
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
-        lbl_idnivel = new javax.swing.JLabel();
-        txt_nombrenivel = new javax.swing.JTextField();
+        lbl_idtarea = new javax.swing.JLabel();
+        txt_descripciontarea = new javax.swing.JTextField();
         btn_accept = new javax.swing.JButton();
         btn_cancel = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jLabel1.setText("ID de Nivel");
+        jLabel1.setText("ID de tarea");
 
-        jLabel2.setText("Nombre del nivel");
+        jLabel2.setText("Descripción");
 
-        lbl_idnivel.setText("id nivel");
+        lbl_idtarea.setText("id tarea");
 
         btn_accept.setText("Aceptar");
-        btn_accept.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btn_acceptActionPerformed(evt);
-            }
-        });
 
         btn_cancel.setText("Cancelar");
 
@@ -58,21 +53,20 @@ public class VentanaAltaNivel extends javax.swing.JFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(btn_accept)
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addComponent(jLabel1)
-                        .addComponent(jLabel2)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 62, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addComponent(btn_cancel)
-                        .addGap(31, 31, 31))
                     .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(txt_nombrenivel)
-                            .addComponent(lbl_idnivel, javax.swing.GroupLayout.DEFAULT_SIZE, 76, Short.MAX_VALUE))
-                        .addContainerGap())))
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel1)
+                            .addComponent(jLabel2))
+                        .addGap(78, 78, 78)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(lbl_idtarea)
+                            .addComponent(txt_descripciontarea, javax.swing.GroupLayout.PREFERRED_SIZE, 148, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(btn_accept)
+                        .addGap(114, 114, 114)
+                        .addComponent(btn_cancel)))
+                .addContainerGap(26, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -80,24 +74,20 @@ public class VentanaAltaNivel extends javax.swing.JFrame {
                 .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel1)
-                    .addComponent(lbl_idnivel))
-                .addGap(23, 23, 23)
+                    .addComponent(lbl_idtarea))
+                .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel2)
-                    .addComponent(txt_nombrenivel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
+                    .addComponent(txt_descripciontarea, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(38, 38, 38)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(btn_accept)
                     .addComponent(btn_cancel))
-                .addContainerGap(13, Short.MAX_VALUE))
+                .addContainerGap(25, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
-    private void btn_acceptActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_acceptActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btn_acceptActionPerformed
 
     /**
      * @param args the command line arguments
@@ -116,20 +106,20 @@ public class VentanaAltaNivel extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(VentanaAltaNivel.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(VentanaAltaTarea.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(VentanaAltaNivel.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(VentanaAltaTarea.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(VentanaAltaNivel.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(VentanaAltaTarea.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(VentanaAltaNivel.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(VentanaAltaTarea.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new VentanaAltaNivel().setVisible(true);
+                new VentanaAltaTarea().setVisible(true);
             }
         });
     }
@@ -139,7 +129,7 @@ public class VentanaAltaNivel extends javax.swing.JFrame {
     private javax.swing.JButton btn_cancel;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel lbl_idnivel;
-    private javax.swing.JTextField txt_nombrenivel;
+    private javax.swing.JLabel lbl_idtarea;
+    private javax.swing.JTextField txt_descripciontarea;
     // End of variables declaration//GEN-END:variables
 }

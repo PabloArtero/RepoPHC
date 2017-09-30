@@ -16,6 +16,7 @@ public class VentanaAltaDepartamento extends javax.swing.JFrame {
      */
     public VentanaAltaDepartamento() {
         initComponents();
+        this.setLocationRelativeTo(null);
     }
 
     /**
@@ -29,7 +30,7 @@ public class VentanaAltaDepartamento extends javax.swing.JFrame {
 
         jLabel3 = new javax.swing.JLabel();
         btn_accept = new javax.swing.JButton();
-        txtfld_nombredepartamento = new javax.swing.JTextField();
+        txt_nombredepartamento = new javax.swing.JTextField();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         lbl_iddepartamento = new javax.swing.JLabel();
@@ -50,7 +51,7 @@ public class VentanaAltaDepartamento extends javax.swing.JFrame {
 
         jLabel2.setText("Nombre Departamento");
 
-        lbl_iddepartamento.setText("set_this_label_to_id");
+        lbl_iddepartamento.setText("id departamento");
 
         btn_cancel.setText("Cancelar");
 
@@ -65,9 +66,9 @@ public class VentanaAltaDepartamento extends javax.swing.JFrame {
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel1)
                             .addComponent(jLabel2))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 45, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 50, Short.MAX_VALUE)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(txtfld_nombredepartamento, javax.swing.GroupLayout.PREFERRED_SIZE, 91, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(txt_nombredepartamento, javax.swing.GroupLayout.PREFERRED_SIZE, 91, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(lbl_iddepartamento))
                         .addContainerGap())
                     .addGroup(layout.createSequentialGroup()
@@ -87,7 +88,7 @@ public class VentanaAltaDepartamento extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel2)
-                    .addComponent(txtfld_nombredepartamento, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(txt_nombredepartamento, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(btn_accept)
@@ -145,6 +146,6 @@ public class VentanaAltaDepartamento extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel lbl_iddepartamento;
-    private javax.swing.JTextField txtfld_nombredepartamento;
+    private javax.swing.JTextField txt_nombredepartamento;
     // End of variables declaration//GEN-END:variables
 }
