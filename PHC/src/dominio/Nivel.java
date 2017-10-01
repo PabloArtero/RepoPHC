@@ -13,8 +13,7 @@ public class Nivel {
     private int idNivel;
     private String nombre;
 
-    public Nivel(int idNivel, String nombre) {
-        this.idNivel = idNivel;
+    public Nivel(String nombre) {
         this.nombre = nombre;
     }
 
