@@ -10,7 +10,7 @@ package dominio;
  * @author josdan
  */
 public class Nivel {
-    private int idNivel;
+    private int idNivel = 0;
     private String nombre;
 
     public Nivel(String nombre) {
@@ -32,6 +32,9 @@ public class Nivel {
     public void setNombre(String nombre) {
         this.nombre = nombre;
     }
-    
-    
+
+    @Override
+    public String toString() {
+        return "Nivel{" + "idNivel=" + idNivel + ", nombre=" + nombre + '}';
+    }
 }
