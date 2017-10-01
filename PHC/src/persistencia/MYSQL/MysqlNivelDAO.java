@@ -179,17 +179,5 @@ public class MysqlNivelDAO implements NivelDAO{
         }
       
     }
-  
-    
-    public static void main(String args[]) throws SQLException {
-        Connection con = DriverManager.getConnection(ParametrosDeConexionBD.URL, ParametrosDeConexionBD.USUARIO, ParametrosDeConexionBD.CONTRASEÑA);
-        
-        NivelDAO dao = new MysqlNivelDAO(con);
-        
-        Nivel nivel = new Nivel("nivel 1");
-        nivel.setIdNivel(11);
-        
-        dao.modificar(nivel);
-    }
     
 }
