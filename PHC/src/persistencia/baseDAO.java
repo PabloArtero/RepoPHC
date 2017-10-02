@@ -14,11 +14,11 @@ import java.util.List;
  */
 public interface baseDAO<T> {
     
-     void insertar(T nivel);
+     void insertar(T entidad);
     
-    void modificar(T nivel);
+    void modificar(T entidad);
     
-    void eliminar(T nivel);
+    void eliminar(T entidad);
     
     List<T> obtenerTodos();
     
