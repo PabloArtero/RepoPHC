@@ -1,2 +1,20 @@
-/PHC/build/
-/PHC/nbproject/private/
+#Configuración antigua de .gitignore creada por NetBeans#
+#/PHC/build/#
+#/PHC/nbproject/private/#
+
+# NetBeans specific #
+PHC/nbproject/private/
+PHC/build/
+PHC/nbbuild/
+PHC/dist/
+PHC/nbdist/
+PHC/nbactions.xml
+PHC/nb-configuration.xml
+
+# Class Files #
+*.class
+
+# Package Files #
+*.jar
+*.war
+*.ear
