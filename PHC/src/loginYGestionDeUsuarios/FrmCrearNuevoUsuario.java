@@ -1,6 +1,5 @@
 package loginYGestionDeUsuarios;
 
-import persistencia.ParametrosDeConexionBD;
 import loginYGestionDeUsuarios.ItemDeCombo;
 import java.sql.Connection;
 import java.sql.DriverManager;

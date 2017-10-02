@@ -1,4 +1,4 @@
-package persistencia;
+package loginYGestionDeUsuarios;
 
 /**
  * Parámetros de conexión a la base de datos.
