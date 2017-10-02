@@ -1,11 +1,11 @@
 /*
  * Sistema de Gestión del Capital Humano.
  */
-/*modificación en la clase principal*/
 package phc;
 
 import loginYGestionDeUsuarios.VariablesDelSistema;
 import javax.swing.JFrame;
+import persistencia.MYSQL.MysqlNivelDAO;
 
 /**
  * Clase principal del sistema. En el método main de esta clase comienza la ejecución del sistema.
@@ -27,6 +27,8 @@ public class PHC {
         //pruebaFrmPrincipal();
         //pruebaAdministrarUsuarios();
         //pruebaCrearNuevoUsuario();
+        
+        //persistencia.MYSQL.MysqlNivelDAO mysqlNivelDAO = new MysqlNivelDAO();
     }
 
 ///////////////////METODOS DE PRUEBA
