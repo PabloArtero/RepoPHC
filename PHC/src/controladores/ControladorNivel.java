@@ -23,7 +23,7 @@ public class ControladorNivel  implements ActionListener/*, FocusListener*/{
     private ArrayList<Nivel> listaNiveles;
 
     public ControladorNivel(VentanaPrincipal ventanaPrincipal) {
-        this.nivel = new Nivel("");
+        this.nivel = new Nivel("NN");
         this.nivelDAO = new MysqlNivelDAO();
         this.ventanaNivel = new VentanaNivel();
         this.ventanaPrincipal = ventanaPrincipal;
@@ -31,6 +31,7 @@ public class ControladorNivel  implements ActionListener/*, FocusListener*/{
         this.listaNiveles = new ArrayList<>();
         
         this.ventanaNivel.mnAgregar.addActionListener(this);
+        this.ventanaNivel.btn_Agregar.addActionListener(this);
         this.ventanaNivel.mnModificar.addActionListener(this);
         this.ventanaNivel.mnVolver.addActionListener(this);
         //this.ventanaNivel.addFocusListener(this);
@@ -77,9 +78,10 @@ public class ControladorNivel  implements ActionListener/*, FocusListener*/{
     
     @Override
     public void actionPerformed(ActionEvent e) {
-        if (e.getSource() == ventanaNivel.mnAgregar) agregar();
-        if (e.getSource() == ventanaNivel.mnModificar) modificar();
-        if (e.getSource() == ventanaNivel.mnVolver) volver();
+        //if (e.getSource() == ventanaNivel.mnAgregar) agregar();
+        if (e.getSource() == ventanaNivel.btn_Agregar) agregar();
+        if (e.getSource() == ventanaNivel.btn_Modificar) modificar();
+        if (e.getSource() == ventanaNivel.btn_volver) volver();
     }
 /*
     @Override

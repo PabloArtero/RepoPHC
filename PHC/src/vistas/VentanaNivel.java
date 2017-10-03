@@ -22,6 +22,9 @@ public class VentanaNivel extends javax.swing.JFrame {
 
         jScrollPane1 = new javax.swing.JScrollPane();
         tabla = new javax.swing.JTable();
+        btn_Agregar = new javax.swing.JButton();
+        btn_Modificar = new javax.swing.JButton();
+        btn_volver = new javax.swing.JButton();
         barraMenu = new javax.swing.JMenuBar();
         mnSeleccionar = new javax.swing.JMenu();
         mnAgregar = new javax.swing.JMenu();
@@ -57,6 +60,12 @@ public class VentanaNivel extends javax.swing.JFrame {
             tabla.getColumnModel().getColumn(1).setResizable(false);
         }
 
+        btn_Agregar.setText("Agregar");
+
+        btn_Modificar.setText("Modificar");
+
+        btn_volver.setText("Volver");
+
         mnSeleccionar.setText("Seleccionar |");
         barraMenu.add(mnSeleccionar);
 
@@ -79,16 +88,30 @@ public class VentanaNivel extends javax.swing.JFrame {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 375, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(18, 18, 18)
+                        .addComponent(btn_Agregar)
+                        .addGap(62, 62, 62)
+                        .addComponent(btn_Modificar)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(btn_volver))
+                    .addGroup(layout.createSequentialGroup()
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 375, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(15, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 267, Short.MAX_VALUE)
-                .addContainerGap())
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 153, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(27, 27, 27)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(btn_Agregar)
+                    .addComponent(btn_Modificar)
+                    .addComponent(btn_volver))
+                .addContainerGap(24, Short.MAX_VALUE))
         );
 
         pack();
@@ -97,6 +120,9 @@ public class VentanaNivel extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JMenuBar barraMenu;
+    public javax.swing.JButton btn_Agregar;
+    public javax.swing.JButton btn_Modificar;
+    public javax.swing.JButton btn_volver;
     private javax.swing.JScrollPane jScrollPane1;
     public javax.swing.JMenu mnAgregar;
     public javax.swing.JMenu mnEliminar;
