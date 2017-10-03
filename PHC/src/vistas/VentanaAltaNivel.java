@@ -35,7 +35,7 @@ public class VentanaAltaNivel extends javax.swing.JFrame {
         btn_accept = new javax.swing.JButton();
         btn_cancel = new javax.swing.JButton();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
         jLabel1.setText("ID de Nivel");
 
@@ -135,11 +135,11 @@ public class VentanaAltaNivel extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btn_accept;
-    private javax.swing.JButton btn_cancel;
+    public javax.swing.JButton btn_accept;
+    public javax.swing.JButton btn_cancel;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel lbl_idnivel;
-    private javax.swing.JTextField txt_nombrenivel;
+    public javax.swing.JTextField txt_nombrenivel;
     // End of variables declaration//GEN-END:variables
 }
