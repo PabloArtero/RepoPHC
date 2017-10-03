@@ -21,17 +21,17 @@ public class VentanaNivel extends javax.swing.JFrame {
     private void initComponents() {
 
         jScrollPane1 = new javax.swing.JScrollPane();
-        jTablaNivel = new javax.swing.JTable();
-        jMenuBar1 = new javax.swing.JMenuBar();
-        jMenu1 = new javax.swing.JMenu();
-        jMenu2 = new javax.swing.JMenu();
-        jMenu3 = new javax.swing.JMenu();
-        jMenu4 = new javax.swing.JMenu();
-        jMenu5 = new javax.swing.JMenu();
+        tabla = new javax.swing.JTable();
+        barraMenu = new javax.swing.JMenuBar();
+        mnSeleccionar = new javax.swing.JMenu();
+        mnAgregar = new javax.swing.JMenu();
+        mnModificar = new javax.swing.JMenu();
+        mnEliminar = new javax.swing.JMenu();
+        mnVolver = new javax.swing.JMenu();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
-        jTablaNivel.setModel(new javax.swing.table.DefaultTableModel(
+        tabla.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null},
                 {null, null},
@@ -39,7 +39,7 @@ public class VentanaNivel extends javax.swing.JFrame {
                 {null, null}
             },
             new String [] {
-                "ID de Tarea", "Descripción"
+                "ID", "Descripción"
             }
         ) {
             boolean[] canEdit = new boolean [] {
@@ -50,28 +50,29 @@ public class VentanaNivel extends javax.swing.JFrame {
                 return canEdit [columnIndex];
             }
         });
-        jScrollPane1.setViewportView(jTablaNivel);
-        if (jTablaNivel.getColumnModel().getColumnCount() > 0) {
-            jTablaNivel.getColumnModel().getColumn(0).setResizable(false);
-            jTablaNivel.getColumnModel().getColumn(1).setResizable(false);
+        tabla.getTableHeader().setReorderingAllowed(false);
+        jScrollPane1.setViewportView(tabla);
+        if (tabla.getColumnModel().getColumnCount() > 0) {
+            tabla.getColumnModel().getColumn(0).setResizable(false);
+            tabla.getColumnModel().getColumn(1).setResizable(false);
         }
 
-        jMenu1.setText("Seleccionar |");
-        jMenuBar1.add(jMenu1);
+        mnSeleccionar.setText("Seleccionar |");
+        barraMenu.add(mnSeleccionar);
 
-        jMenu2.setText("Agregar |");
-        jMenuBar1.add(jMenu2);
+        mnAgregar.setText("Agregar |");
+        barraMenu.add(mnAgregar);
 
-        jMenu3.setText("Modificar |");
-        jMenuBar1.add(jMenu3);
+        mnModificar.setText("Modificar |");
+        barraMenu.add(mnModificar);
 
-        jMenu4.setText("Eliminar |");
-        jMenuBar1.add(jMenu4);
+        mnEliminar.setText("Eliminar |");
+        barraMenu.add(mnEliminar);
 
-        jMenu5.setText("Volver |");
-        jMenuBar1.add(jMenu5);
+        mnVolver.setText("Volver |");
+        barraMenu.add(mnVolver);
 
-        setJMenuBar(jMenuBar1);
+        setJMenuBar(barraMenu);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -95,13 +96,13 @@ public class VentanaNivel extends javax.swing.JFrame {
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JMenu jMenu1;
-    private javax.swing.JMenu jMenu2;
-    private javax.swing.JMenu jMenu3;
-    private javax.swing.JMenu jMenu4;
-    private javax.swing.JMenu jMenu5;
-    private javax.swing.JMenuBar jMenuBar1;
+    private javax.swing.JMenuBar barraMenu;
     private javax.swing.JScrollPane jScrollPane1;
-    public javax.swing.JTable jTablaNivel;
+    public javax.swing.JMenu mnAgregar;
+    public javax.swing.JMenu mnEliminar;
+    public javax.swing.JMenu mnModificar;
+    public javax.swing.JMenu mnSeleccionar;
+    public javax.swing.JMenu mnVolver;
+    public javax.swing.JTable tabla;
     // End of variables declaration//GEN-END:variables
 }
