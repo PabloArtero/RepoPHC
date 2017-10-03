@@ -11,7 +11,7 @@ import persistencia.DepartamentoDAO;
  *
  * @author LENOVO
  */
-public class ControladorVistaAltaDepartamento {
+public class ControladorAltaDepartamento {
     private persistencia.DepartamentoDAO departamento;
 
     public DepartamentoDAO getDepartamento() {
